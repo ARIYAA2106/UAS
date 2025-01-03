@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Perpustakaan </title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="bg-info-subtle">
+    <!-- HEADER -->
+    <header class="shadow top-0 position-sticky z-1">
+        <!-- LOGO -->
+        <div class="container-fluid d-flex justify-content-center align-items-center " 
+        style=" background-color: rgb(244, 240, 240); font-family: sans-serif;">
+            <img src="src/logo.jpg" alt="LOGO" width="100" height="100">
+            <h1 class="fs-3 ">PERPUSTAKAAN DIGITAL</h1>
+        </div>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand bg-danger">
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav" >
+                  <li class="nav-item">
+                    <a class="nav-link text-white " aria-current="page" href="beranda.html">Beranda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="beranda.html">Profil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="buku.html">Buku</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="peminjaman.html">Peminjaman</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="login.html">Login/Daftar</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+     <main>  
+        <form class="d-grid w-25 text-center container justify-content-center gap-1 mt-3" action="#" method="post">
+            <label for="cari">Cari Buku</label>
+            <input type="search" name="search" id="searchBook" placeholder="Search.....">
+        </form>
+        
+        <div class="d-flex gap-2 justify-content-center align-items-center mt-3">
+            <div class="card" style="width: 14rem; box-shadow: 2px 1px 10px black;">
+                <img src="src/alam.jpg" class="card-img-top" alt="alam">
+                <div class="card-body text-center">
+                  <h5 class="card-title">BUKU PENGETAHUAN ALAM 1</h5>
+            <button onclick="pinjamBook()" type="submit" class="btn btn-primary btn-outline-dark">PINJAM</button>
+            </div>
+              </div>
+              <div class="card" style="width: 14rem; box-shadow: 2px 1px 10px black;">
+                <img src="src/alam2.jpg" class="card-img-top" alt="alam">
+                <div class="card-body text-center">
+                  <h5 class="card-title">BUKU PENGETAHUAN ALAM 2</h5>
+            <button onclick="pinjamBook()" type="submit" class="btn btn-primary btn-outline-dark">PINJAM</button>
+                </div>
+              </div>
+              <div class="card" style="width: 14rem; box-shadow: 2px 1px 10px black;">
+                <img src="src/alam3.jpg" class="card-img-top" alt="alam">
+                <div class="card-body text-center">
+                  <h5 class="card-title">BUKU PENGETAHUAN ALAM 3</h5>
+            <button onclick="pinjamBook()" type="submit" class="btn btn-primary btn-outline-dark">PINJAM</button>
+                </div>
+              </div>
+              <div class="card" style="width: 14rem; box-shadow: 2px 1px 10px black;">
+                <img src="src/anak.jpg" class="card-img-top" alt="anak">
+                <div class="card-body text-center">
+                  <h5 class="card-title">BUKU CERITA ANAK 1</h5>
+            <button onclick="pinjamBook()" type="submit" class="btn btn-primary btn-outline-dark">PINJAM</button>
+                </div>
+              </div>
+        </div>
+        <div class="d-flex gap-2 justify-content-center align-items-center mt-3">
+            <div class="card" style="width: 14rem; box-shadow: 2px 1px 10px black;">
+                <img src="src/anak2.jpg" class="card-img-top" alt="anak">
+                <div class="card-body text-center">
+                  <h5 class="card-title">BUKU CERITA ANAK 2</h5>
+        <button onclick="pinjamBook()" type="submit" class="btn btn-primary btn-outline-dark">PINJAM</button>
+                </div>
+              </div>
+              <div class="card" style="width: 14rem; box-shadow: 2px 1px 10px black;">
+                <img src="src/anak3.jpg" class="card-img-top" alt="anak">
+                <div class="card-body text-center">
+                  <h5 class="card-title">BUKU CERITA ANAK 3</h5>
+            <button onclick="pinjamBook()" type="submit" class="btn btn-primary btn-outline-dark">PINJAM</button>
+                </div>
+              </div>
+              <div class="card" style="width: 14rem; box-shadow: 2px 1px 10px black;">
+                <img src="src/enski.jpg" class="card-img-top" alt="ensik">
+                <div class="card-body text-center">
+                  <h5 class="card-title">BUKU ENSIKLOPEDIA 1</h5>
+            <button onclick="pinjamBook()" type="submit" class="btn btn-primary btn-outline-dark">PINJAM</button>
+                </div>
+              </div>
+              <div class="card" style="width: 14rem; box-shadow: 2px 1px 10px black;">
+                <img src="src/enski2.jpg" class="card-img-top" alt="ensik">
+                <div class="card-body text-center">
+                  <h5 class="card-title">BUKU ENSIKLOPEDIA 2</h5>
+            <button onclick="pinjamBook()" type="submit" class="btn btn-primary btn-outline-dark">PINJAM</button>
+                </div>
+              </div>
+        </div>
+        <div class="d-flex gap-2 justify-content-center align-items-center mt-3">
+            <div class="card" style="width: 14rem; box-shadow: 2px 1px 10px black;">
+                <img src="src/enski3.jpg" class="card-img-top" alt="anak">
+                <div class="card-body text-center">
+                  <h5 class="card-title">BUKU ENSIKLOPEDIA 3</h5>
+        <button onclick="pinjamBook()" type="submit" class="btn btn-primary btn-outline-dark">PINJAM</button>
+                </div>
+              </div>
+              <div class="card" style="width: 14rem; box-shadow: 2px 1px 10px black;">
+                <img src="src/sejarah.jpg" class="card-img-top" alt="anak">
+                <div class="card-body text-center">
+                  <h5 class="card-title">BUKU SEJARAH 1</h5>
+            <button onclick="pinjamBook()" type="submit" class="btn btn-primary btn-outline-dark">PINJAM</button>
+                </div>
+              </div>
+              <div class="card" style="width: 14rem; box-shadow: 2px 1px 10px black;">
+                <img src="src/sejarah2.jpg" class="card-img-top" alt="ensik">
+                <div class="card-body text-center">
+                  <h5 class="card-title">BUKU SEJARAH 2</h5>
+            <button onclick="pinjamBook()" type="submit" class="btn btn-primary btn-outline-dark">PINJAM</button>
+                </div>
+              </div>
+              <div class="card" style="width: 14rem; box-shadow: 2px 1px 10px black;">
+                <img src="src/sejarah3.jpg" class="card-img-top" alt="ensik">
+                <div class="card-body text-center">
+                  <h5 class="card-title">BUKU SEJARAH 3</h5>
+            <button onclick="pinjamBook()" type="submit" class="btn btn-primary btn-outline-dark">PINJAM</button>
+                </div>
+              </div>
+        </div>
+     </main> <br>
+     <!-- FOOTER -->
+     <footer class="bg-danger ">
+        <div class="container-fluid text-center"> 
+          <h1 class="fs-5 h-100">SITUS WEBSITE INI MASIH TAHAP PERKEMBANGAN</h1>
+        <p> &copy; Copyright </p> <br>
+        </div>
+      </footer>
+    
+      
+      <!-- Javascript -->
+
+    <script>
+        // SEARCH
+function searchBooks() {
+    var input, filter, bookList, books, bookTitle, i, txtValue;
+    
+    // ambil nilai pencarian , agar menyesuaikan besar & kecil huruf
+    input = document.getElementById('searchBook');
+    filter = input.value.toUpperCase();
+
+    // Ambil kontainer buku
+    bookList = document.querySelectorAll('.card');  // Menggunakan querySelectorAll untuk memilih semua card buku
+    
+    // Loop untuk memeriksa setiap card buku
+    for (i = 0; i < bookList.length; i++) {
+        bookTitle = bookList[i].querySelector('.card-title');  // Ambil judul buku
+        txtValue = bookTitle.textContent || bookTitle.innerText;  // Ambil teks judul buku
+
+        // Jika judul buku mengandung kata pencarian, tampilkan, jika tidak, sembunyikan
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            bookList[i].style.display = "";  // Tampilkan buku
+        } else {
+            bookList[i].style.display = "none";  // Sembunyikan buku
+        }
+    }
+}
+// Event listener untuk input pencarian, yang memanggil fungsi searchBooks setiap kali pengguna mengetik
+document.getElementById('searchBook').addEventListener('keyup', searchBooks);
+
+// PINJAM
+function pinjamBook(){
+   var con = confirm('Apakah ingin melanjutkan untuk peminjaman ?');
+  
+    if (con == true){
+        window.location.href='peminjaman.html'
+    };
+  }
+   </script>
+</body>
+</html>
